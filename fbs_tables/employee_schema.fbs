@@ -1,0 +1,11 @@
+namespace fbs_schema;
+
+table Employee {
+    Eno:int;
+    FistName:string;
+    LastName:string;
+    PhonoNo:string;
+    Salary:int;
+}
+
+root_type Employee;

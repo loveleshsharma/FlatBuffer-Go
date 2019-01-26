@@ -1,5 +1,7 @@
 package Models
 
+import "fmt"
+
 type Employee struct {
 	Eno int
 	FirstName string
@@ -28,4 +30,8 @@ func (emp *Employee) GetPhoneNo() string {
 
 func (emp *Employee) GetSalary() int {
 	return emp.Salary
+}
+
+func (emp *Employee) String() string {
+	return fmt.Sprintf("Eno: %d, FirstName: %s, LastName: %s, PhoneNo: %s, Salary: %d",emp.Eno,emp.FirstName,emp.LastName,emp.PhoneNo,emp.Salary)
 }
